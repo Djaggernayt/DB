@@ -1,0 +1,32 @@
+﻿<Page x:Class="Gigi.AutorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gigi"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="600"
+      Title="AutorizationPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Логин:" Margin="10" FontSize="30" Grid.Row="0" Grid.Column="0"></Label>
+        <TextBox Name="TextboxLogin" Margin="10" Grid.Row="0" Grid.Column="1"></TextBox>
+        <Label Content="Пароль:" Margin="10" FontSize="30" Grid.Row="1" Grid.Column="0"></Label>
+        <PasswordBox Name="pass" Margin="10" Grid.Column="1" Grid.Row="1"/>
+        <Button Name="btnreg" Width="200" Content="Зарегистрироваться" Height="80" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right"
+ Click="btnreg_Click"/>
+        <Button Name="btnenter" Width="200" Content="Войти" Height="80" Grid.Row="2" Grid.Column="1" Click="btnenter_Click"/>
+
+
+
+    </Grid>
+</Page>
